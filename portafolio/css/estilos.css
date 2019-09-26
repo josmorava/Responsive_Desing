@@ -1,0 +1,381 @@
+/*###########################
+##########HEADER###########
+########################### */
+
+.header{
+    background-color:#1d252c;
+    color: white;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+align-items: center; 
+    height: 70px;
+
+}
+ /*estilos solamente para los enlaces del header*/
+ .header a{
+     color: white;
+     text-decoration: none;
+ }
+ .header ol{
+     display: flex;
+     height: inherit;
+ }
+
+ .header ol li{
+     height: inherit;
+    }
+    
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+ ol, ul
+{
+margin:0px;
+padding: 0;
+list-style: none;
+}
+
+.menu{
+    height: inherit;
+}
+/*###########################
+##########HERO###########
+########################### */
+
+.hero{
+    height: 300px;
+    /*imagen de fondo*/
+  /*   background-image: url('../imagenes/hero.jpg'); */
+    /*estilos de imagen de fondo*/
+    /* background-size: 500px 300px; */
+    /*repetición de imagenes de fondo a través de patrones*/
+   /*  background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    background-color: #1d252c;
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .hero-image{
+        /*optimizar a las direcciones originales de la imagen*/
+        object-fit: cover;
+    }
+
+    h1{
+        /*alto de linea*/
+        line-height: 1.5;
+        font-size: 40px;
+        letter-spacing: -.2px;
+        /*Primera letra en mayúscula*/
+        text-transform: capitalize;
+        text-decoration: dashed;
+        color: white;
+        margin: 0;
+         
+    }
+    
+    h1 strong{
+        color: #026fff;
+    }
+
+
+/*###########################
+##########PORTFOLIO###########
+########################### */
+.project{
+    /* border-top: 10px solid red;
+     border-right: 10px solid green;
+     border-left: 10px solid orange;
+     border-bottom: 10px solid pink;*/
+  /*    border-width: 15px;
+     border-style:solid; */
+     border-radius: 10px;
+     border: 1px solid black;
+     margin-bottom: 15px;
+     padding: 20px;
+     /* margin: 10px; */
+    background-color: white;
+
+
+
+   /*permite alinar elementos de forma horizontal 
+    justify-content: */
+    
+    /*forma de organizar los elementos dentro del website
+    en columnas,filas, ect.
+    flex-direction:  */
+
+    /*permite alinear elementos de forma vertical
+    align-items: ;*/
+
+    /* permite asignarle un máximo de tamaño de la caja de lugar
+    de trabajo; se le agg más megen, padding, o bode no sobrepasará
+    el tamaño máximo asingnado con width and height
+    box-sizing: border-box; */
+ }
+ 
+ h2{
+     color: #026fff;
+     text-transform: uppercase;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 40px;
+ }
+
+ .portfolio{
+     background-color:#FAFAFA;
+     padding: 20px;
+
+ }
+ .project-container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .project-details{
+     width: 500px;
+     display: block;
+ }
+ 
+.project-imageContainer{
+    width: 500px;
+    display: block;
+}
+ 
+ .project-title{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+
+ .project-date, .project-course, .project-url{
+    margin: 10px 0;
+    width: 500px;
+ }
+
+ .project-description{
+     font-size: 20px;
+ }
+
+ .project strong{
+     font-family: 'Fjalla One', sans-serif;
+ }
+
+
+/*###########################
+##########EVENTOS###########
+########################### */
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    
+    margin: 10px;
+    width: 480px ;
+    border-radius: 10px ;
+    /**/
+    overflow: hidden;
+    /**/
+    flex-shrink: 0;
+    background-color:#e3f0f8 ;
+
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top:-40px;
+    background-color: white;
+    /**/
+    position: relative;
+    /* border: 1px solid black; */
+    padding:20px;
+    /*alineación de texto*/
+    text-align: center;
+    border-radius: 5px;
+}
+
+.event-list-title{
+    margin-left: 10px;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    /*cambiar proporciones de la imagen*/ 
+    object-fit: cover;   
+}
+
+.event-url{
+    padding:5px 40px ;
+    border: 1px solid #056fff;
+    text-decoration: none;
+    color: #026fff;
+    border-radius: 5px;
+}
+
+/*###########################
+##########CONTACTO###########
+########################### */
+
+.contact{
+    background-color: #056fff;
+    color : white;
+    /*alto*/
+    height: 150px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+   
+}
+ .social-link.twitter{
+     background-image: url('../imagenes/twitter.svg');
+     background-size: 50px 50px;
+ }
+
+ 
+ .social-link.facebook{
+    background-image: url('../imagenes/facebook.svg');
+    background-size: 50px 50px;
+}
+
+.social-link.github{
+    background-image: url('../imagenes/github.svg');
+    background-size: 50px 50px;
+}
+
+
+.social-link.instagram{
+    background-image: url('../imagenes/instagram.svg');
+    background-size: 50px 50px;
+}
+
+.from-email input{
+    border-color: gray;
+    padding: 5px 25px;
+    background-image: url('../imagenes/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+    background-position-x: 5px; 
+    border-radius:5px;
+    border-style: solid;
+}
+
+.from-email button{
+    display: block;
+    padding:10px 5px ;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.from-email h3{
+    font-family: 'Source San Pro', serif;
+}
+/*###########################
+##########FOOTER###########
+########################### */
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    /* alineación vertical de los elementos */
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+
+
+
+ /*###########################
+##########GLOBALS###########
+########################### */
+body{
+    margin: 0;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    /*anchura de fuente*/
+    font-weight: normal;
+    /* cursiva font-style: italic;*/
+}
+
+figure{
+    margin: 0;
+}
+
+.container{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width:1000px;
+    /*elementos eredados*/
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
+/*agregando mediaqueries de forma directa en la hoja principal de estilos*/
+/*como consejo y buena práctica es recomendable empezar con el media querie más grande */
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+}
+
+@media screen and (max-width: 320px){
+    
+}

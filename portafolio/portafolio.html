@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--"es" español/ ñ, ' -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leonidas Esteban - Proyecto</title>
+    <!--"icon" icono en la parte izquierda de la pestaña al aldo del nombre de la pag-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    <!--adaptación del website a distintos dispositivos-->
+    <!--'width= device-width' el ancho va a ser igual al ancho del dispositivo-->
+    <!--'initial-escale= 0-1' modifica el ancho o zoom inicial en el website -->
+    <meta name="viewport" content=" width=device-width, initial-scale=1">
+    <!--agregando media queries en forma de una nueva hoja de estilos-->
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> -->
+
+    <!--agregando media queries en forma de la estiqueta style-->
+    <!-- <style>
+    @media screen and (max-width: 768px){
+        body{
+            border: 10px solid blue;
+        }
+    } -->
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <div class="container">
+            <figure class="logo">
+                <!--"alt" texto alternativo para la "no carga de imagen"-->
+                <img src="imagenes/logo.png" height="50px" alt="Logo de http://leonidasesteban.com">
+            </figure>
+            <nav class="menu">
+                    <!--listas desordenadas-->
+                    <ul></ul>
+                    <!--listas ordenadas-->
+                    <ol class="menu-settings">
+                        <!--elementos de listas-->
+                        <li>
+                            <a href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#eventos">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Trabajemos juntos</a>
+                        </li>
+                    </ol>
+            </nav>  
+        </div> 
+    </header>
+    <!--el hero viene de buenas practicas como el contenido principal-->
+    <section class="hero">
+        <div class="container">
+        <h1>
+            Hola, soy <strong> Leonidas Esteban <br> Desarrollador</strong> <br> Javascrip con <br/> pasión por la <strong> enseñanza.</strong>
+        </h1>
+        <img class="hero-image" src="imagenes/hero.jpg" alt=" logo principal del sitio,imagen de http://leonidasesteban.com" width="500px" height="300px">
+    </div>
+       
+    </section>
+    <section id="portafolio" class="portfolio">
+       <div class="container">
+            <h2>Portafolio (Proyectos destacados)</h2>
+            <article class="project">
+            <div class="project-container">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"> <strong> Fecha: </strong> 30/08/2019</p>
+                    <p class="project-url"> <strong> Puedes verlo en :: </strong> www.platzi.com/native</p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
+                        para crear la mejor app para enseñar el funcionamiento de 
+                        React y React Native. Desde crear un vista-detalle, hasta patrones avanzados.
+                    </p>  
+                </div>
+                <figure class="project-imageContainer">
+                        <img class="project-image" src="imagenes/platzi-video-react-native.png" alt="Proyecto del curso de reca native" width="500px">
+                </figure>
+            </div>
+            </article>
+
+            <article class="project">
+                <div class="project-container">
+                    <div class="project-details">
+                        <h3 class="project-title">Platzi Video</h3>
+                        <h6 class="project-course">React Native / React</h6>
+                        <p class="project-date"> <strong> Fecha: </strong> 30/08/2019</p>
+                        <p class="project-url"> <strong> Puedes verlo en :: </strong> www.platzi.com/native</p>
+                        <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo 
+                            para crear la mejor app para enseñar el funcionamiento de 
+                            React y React Native. Desde crear un vista-detalle, hasta patrones avanzados.
+                        </p>  
+                    </div>
+                    <figure class="project-imageContainer">
+                            <img class="project-image" src="imagenes/platzi-video-react-native.png" alt="Proyecto del curso de reca native" width="500px">
+                    </figure>
+                </div>
+            </article>
+       </div>
+  
+    </section>
+        <div class="container">
+                <h2 class="event-list-title">Más sobre mi experiencia</h2>
+        </div>
+    <section id="eventos" class="event-list">
+        <div class="container">
+                <article class="event">
+                        <!--Elemento padre para agegar una imagen-->
+                        <figure class="event-imageContainer">
+                            <img class="envent-image" src="imagenes/platzi-conf.webp" alt="Imagen de :: imagenes/platzi-conf.webp" width="500px"/>
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                            <p class="evnet-description">El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto como tener una vida constante de aprendizaje.</p>
+                            <!--"targe=_blank" nueva pestaña-->
+                            <a class="event-url" href="http://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                        </div>
+                    </article>           
+                    <article class="event">
+                        <!--Elemento padre para agegar una imagen-->
+                        <figure class="event-imageContainer">
+                            <img class="envent-image" src="imagenes/platzi-conf.webp" alt="Imagen de :: imagenes/platzi-conf.webp" width="500px"/>
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                             <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                            <!--"targe=_blank" nueva pestaña-->
+                            <a class="event-url" href="http://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                         </div>
+                    </article>                       
+                    <article class="event">
+                        <!--Elemento padre para agegar una imagen-->
+                        <figure class="event-imageContainer">
+                            <img class="envent-image" src="imagenes/platzi-conf.webp" alt="Imagen de :: imagenes/platzi-conf.webp" width="500px"/>
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                            <p class="evnet-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                             <!--"targe=_blank" nueva pestaña-->
+                            <a class="event-url" href="http://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <!--Elemento padre para agegar una imagen-->
+                        <figure class="event-imageContainer">
+                            <img class="envent-image" src="imagenes/platzi-conf.webp" alt="Imagen de :: imagenes/platzi-conf.webp" width="500px"/>
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                            <p class="evnet-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                            <!--"targe=_blank" nueva pestaña-->
+                            <a class="event-url" href="http://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+                        </div>
+                    </article>
+        </div>
+    </section>
+    <section id="contacto" class="contact">
+        <div class="container">
+              <!--etiqueta para formulario, "action" direccion donde lleva el formulario-->
+             <form action="/suscripcion/" class="from-email">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" name="" id="email" placeholder="Déjame tu email">
+            <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="http://twitter.com/JoseMor74460991" class="social-link twitter"></a>
+                <a href="http://facebook.com/JoseVaron.69" class="social-link facebook"></a>
+                <a href="http://github.com/josmorava" class="social-link github"></a>
+                <a href="http://instagram.com/varon_jose" class="social-link instagram"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+                <div>
+                        <p>Curso de Desarrollo web online 2018 <img src="imagenes/platzi.png"  width="80" alt=""></p>
+                    </div>
+                    <div>
+                        <p>
+                            Designed width <\3 by <a href="https://twitter.com/thespianartist"> @thespianartist </a>
+                        </p>
+                    </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
