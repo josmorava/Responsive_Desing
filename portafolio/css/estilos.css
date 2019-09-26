@@ -8,8 +8,9 @@
     margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
-align-items: center; 
+    align-items: center; 
     height: 70px;
+    flex-wrap: wrap;
 
 }
  /*estilos solamente para los enlaces del header*/
@@ -61,6 +62,7 @@ list-style: none;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     }
 
     .hero-image{
@@ -102,6 +104,7 @@ list-style: none;
      padding: 20px;
      /* margin: 10px; */
     background-color: white;
+    
 
 
 
@@ -139,6 +142,7 @@ list-style: none;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ flex-wrap: wrap;
  }
 
  .project-details{
@@ -240,6 +244,7 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -308,6 +313,7 @@ list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer img{
     /* alineación vertical de los elementos */
@@ -348,7 +354,7 @@ figure{
 .container{
     /* border: 1px solid red; */
     margin: 0 auto;
-    width:1000px;
+    max-width:1000px;
     /*elementos eredados*/
     display: inherit;
     align-items: inherit;
@@ -367,9 +373,9 @@ figure{
 
 
 @media screen and (max-width: 768px){
-    body{
+   /*  body{
         border: 10px solid green;
-    }
+    } */
 }
 
 @media screen and (max-width: 480px){
