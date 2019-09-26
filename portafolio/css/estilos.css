@@ -192,8 +192,8 @@ list-style: none;
 
 .event{
     
-    margin: 10px;
-    width: 480px ;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px ;
     /**/
     overflow: hidden;
@@ -376,6 +376,30 @@ figure{
 /*como consejo y buena práctica es recomendable empezar con el media querie más grande */
 
 @media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
+     /*###HERO###*/
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+}
+h1{
+    font-size: 2em;
+    z-index: 2;
+}
+.hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+}
 
 }
 
@@ -399,7 +423,6 @@ figure{
   .header .logo{
       text-align: center;
   }
-  /*###HERO###*/
   /*####PORTFOLIO###*/
   .project .project-container{
       display: block;
@@ -428,16 +451,58 @@ figure{
     font-size: .8em;
   }
   /*###ENVENTOS###*/
+  .event{
+     width:auto; 
+     flex-shrink: initial;
+  }
+  .event img{
+      width: 100%;
+  }
+  .evemt-detail{
+      /*arriba,derecha,abajo e izquierda*/
+      margin: -2px .5px .5px;
+      padding: 1em ;
+
+  }
   /*###CONTACT###*/
+  .contact{
+      height: auto;
+      padding: 1.5em 0;
+      text-align: center;
+        display: block;
+  }
+  .from-email button{
+      margin: 1em auto;
+  }
+  .from-email h3{
+      margin-top: 0;
+  }
   /*###FOOTER###*/
+  .footer{
+      display: block;
+      text-align: center;
+      border: 1px solid transparent;
+  }
 
 @media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5em;
+    }
     .project-details{
         width: auto;
         font-size: 12px;
+        
     }
+
 }
 
 @media screen and (max-width: 320px){
-    
+    h1{
+        background: rgba(0, 0,0,.5);
+        font-size: 1.8em;
+    }
+    .hero{
+        padding: 2em 1em;
+       
+    }
 }
