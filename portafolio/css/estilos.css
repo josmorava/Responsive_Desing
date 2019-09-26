@@ -355,6 +355,7 @@ figure{
     /* border: 1px solid red; */
     margin: 0 auto;
     max-width:1000px;
+    flex: 1;
     /*elementos eredados*/
     display: inherit;
     align-items: inherit;
@@ -372,12 +373,24 @@ figure{
 }
 
 
-@media screen and (max-width: 768px){
-   /*  body{
-        border: 10px solid green;
-    } */
-}
-
+@media screen and (max-width: 767px){
+  .header{
+      display: block;
+      height: auto;
+  }
+  .header ol{
+      display: block;
+  }
+  .header ol li{
+      text-align: center;
+      height: 50px;
+  }
+  header a {
+      justify-content: center;
+  }
+  .header .logo{
+      text-align: center;
+  }
 @media screen and (max-width: 480px){
     
 }
