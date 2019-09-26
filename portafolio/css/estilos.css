@@ -146,13 +146,19 @@ list-style: none;
  }
 
  .project-details{
-     width: 500px;
+     width: 50%;
      display: block;
  }
  
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
     display: block;
+}
+
+/*imágenes responsive, adaptarlas al website*/
+.project-imageContainer img{
+    max-width: 100%;
+    width: 100%;
 }
  
  .project-title{
@@ -162,7 +168,8 @@ list-style: none;
  }
 
  .project-date, .project-course, .project-url{
-    margin: 10px 0;
+    margin: .4em 0;
+    margin-bottom: .3em;
     width: 500px;
  }
 
@@ -374,6 +381,7 @@ figure{
 
 
 @media screen and (max-width: 767px){
+    /*####HEADER####*/
   .header{
       display: block;
       height: auto;
@@ -391,8 +399,43 @@ figure{
   .header .logo{
       text-align: center;
   }
+  /*###HERO###*/
+  /*####PORTFOLIO###*/
+  .project .project-container{
+      display: block;
+  }
+  .project-imageContainer{
+      width: auto;
+      text-align: center;
+  }
+  .project-details{
+      width: auto;
+      font-size: 16px;
+  }
+  .priject-title{
+    font-size: 1.5em;
+  }
+  .priject-url{
+    font-size: .7em;
+  }
+  .project-course{
+    font-size: 1em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: .8em;
+  }
+  /*###ENVENTOS###*/
+  /*###CONTACT###*/
+  /*###FOOTER###*/
+
 @media screen and (max-width: 480px){
-    
+    .project-details{
+        width: auto;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px){
