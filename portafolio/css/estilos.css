@@ -395,6 +395,8 @@ figure{
     position: relative;
 }
 
+/*agregando icono de menu de amburguesa*/
+
 @font-face {
     font-family: 'icomoon';
     src:  url('fonts/icomoon.eot?1wrptc');
@@ -425,6 +427,23 @@ figure{
   .icon-menu:before {
     content: "\e9bd";
   }
+
+  .burger-button{
+      width: 40px;
+      height: 40px;
+      border-radius:50%;
+      background-color : rgb(0,0,0,.5);
+      display: none;
+      /*alto de linea*/
+      line-height: 40px;
+      text-align: center;
+      position: fixed;
+      z-index: 4;
+      left: 5px;
+      top: 5px;
+      color: white;
+  }
+
 
 /*agregando mediaqueries de forma directa en la hoja principal de estilos*/
 /*como consejo y buena práctica es recomendable empezar con el media querie más grande */
@@ -459,6 +478,10 @@ h1{
 
 
 @media screen and (max-width: 767px){
+    /*####BURGUER-MENU###*/
+    .burger-button{
+        display: block;
+    }
     /*####HEADER####*/
   .header{
       display: block;
